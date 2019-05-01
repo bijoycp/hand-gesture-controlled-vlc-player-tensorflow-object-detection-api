@@ -24,51 +24,51 @@ model {
       faster_rcnn_box_coder {  
         y_scale: 10.0  
         
-uplod  data-colab/training/
+uplod  data-colab/training/  
 
-create file object-detection.pbtxt
-object-detection.pbtxt
+create file object-detection.pbtxt   
+object-detection.pbtxt  
 
-item {
-  id: 1
-  name: 'A'
-}
-item {
-  id: 2
-  name: 'B'
-}
-item {
-  id: 3
-  name: 'I'
-}
-item {
-  id: 4
-  name: 'L'
-}
-item {
-  id: 5
-  name: 'V'
+item {  
+  id: 1  
+  name: 'A'  
+}  
+item {  
+  id: 2  
+  name: 'B'  
+}  
+item {  
+  id: 3  
+  name: 'I'  
+}  
+item {  
+  id: 4  
+  name: 'L'  
+}  
+item {  
+  id: 5  
+  name: 'V'  
 
-save 
-upload to data-colab/training/
+save   
+upload to data-colab/training/  
 
-you bata-colab directory will look like this 
+you bata-colab directory will look like this   
 
-data-colab/
--data/
--images.zip
--training/
---object-detection.pbtxt  
---ssd_mobilenet_v1_pets.config
--xml_to_csv.py
--protobuf.zip
--generate_tfrecord.py
+data-colab/  
+-data/  
+-images.zip  
+-training/  
+--object-detection.pbtxt    
+--ssd_mobilenet_v1_pets.config  
+-xml_to_csv.py  
+-protobuf.zip  
+-generate_tfrecord.py  
 
-open the object-detection.ipynb program and run the program using colab
-https://colab.research.google.com/
+open the object-detection.ipynb program and run the program using colab  
+https://colab.research.google.com/  
 
-after running the program you will get a trained model in
+after running the program you will get a trained model in  
 
-hand_sign_out_inference_graph directory 
-downlod the directory into your local pc 
-run the object_detection_webcam_1.py
+hand_sign_out_inference_graph directory   
+downlod the directory into your local pc   
+run the object_detection_webcam_1.py  
