@@ -1,5 +1,5 @@
 # hand-gesture-controlled-vlc-player-tensorflow-object-detection-api
-control a vlc player using hand gesture using tensorflow object detection api  model trained using colab
+control a vlc player using hand gesture - tensorflow object detection api  model trained using colab
 
 capture the images from webcam with a l and i gesture images of 250 using the program
 
