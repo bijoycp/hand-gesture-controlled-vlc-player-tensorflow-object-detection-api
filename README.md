@@ -10,19 +10,19 @@ take 70% images of al and i to train directory and 30 % to test directory
 
 upload the images and the data files to google drive name data-colab
 
-uplod generate_tfrecord.py file
-https://github.com/datitran/raccoon_dataset/blob/master/generate_tfrecord.py
-downlod 
-wget https://raw.githubusercontent.com/tensorflow/models/master/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
+uplod generate_tfrecord.py file  
+https://github.com/datitran/raccoon_dataset/blob/master/generate_tfrecord.py  
+downlod   
+wget https://raw.githubusercontent.com/tensorflow/models/master/object_detection/samples/configs/ssd_mobilenet_v1_pets.config  
 
-edit -> ssd_mobilenet_v1_pets.config
+edit -> ssd_mobilenet_v1_pets.config  
 
-model {
-  ssd {
-    num_classes: 1    ----- your classnumber here i use 5 labels so "num_classes: 5"
-    box_coder {
-      faster_rcnn_box_coder {
-        y_scale: 10.0
+model {  
+  ssd {  
+    num_classes: 1    ----- your classnumber here i use 5 labels so "num_classes: 5"  
+    box_coder {  
+      faster_rcnn_box_coder {  
+        y_scale: 10.0  
         
 uplod  data-colab/training/
 
