@@ -8,6 +8,7 @@ https://github.com/tzutalin/labelImg
 
 take 70% images of al and i to train directory and 30 % to test directory
 
+## upload to google drive
 upload the images and the data files to google drive name data-colab
 
 uplod generate_tfrecord.py file  
@@ -64,11 +65,14 @@ data-colab/
 -protobuf.zip  
 -generate_tfrecord.py  
 
+## run the program in colab
 open the object-detection.ipynb program and run the program using colab  
 https://colab.research.google.com/  
 
+##download the trained model
 after running the program you will get a trained model in  
 
 hand_sign_out_inference_graph directory   
-downlod the directory into your local pc   
+downlod the directory into your local pc 
+## runthe program in pc
 run the object_detection_webcam_1.py  
