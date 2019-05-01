@@ -1,7 +1,7 @@
 # hand-gesture-controlled-vlc-player-tensorflow-object-detection-api
 control a vlc player using hand gesture - tensorflow object detection api  model trained using colab
 
-capture the images from webcam with a l and i gesture images of 250 using the program
+capture the images from webcam with a, l and i gesture images of 250 using the program
 
 ## label the image data using 
 https://github.com/tzutalin/labelImg
