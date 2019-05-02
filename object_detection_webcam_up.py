@@ -11,7 +11,7 @@ import zipfile
 from collections import defaultdict
 from io import StringIO
 #from matplotlib import pyplot as plt
-from PIL import Image
+# from PIL import Image
 
 
 from utils import label_map_util
@@ -81,6 +81,7 @@ with detection_graph.as_default():
    ret = True
    while (ret):
       ret,image_np = cap.read()
+      im_height,im_width,ch = image_np.shape
       image_np = cv2.flip(image_np, 1)
       # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
       image_np_expanded = np.expand_dims(image_np, axis=0)
@@ -106,13 +107,24 @@ with detection_graph.as_default():
           category_index,
           use_normalized_coordinates=True,
           line_thickness=8)
-#      plt.figure(figsize=IMAGE_SIZE)
-#      plt.imshow(image_np)
+      
       bb=np.squeeze(scores)
       if bb[0]>.75:
         aa=np.squeeze(classes).astype(np.int32)
+        cc=np.squeeze(boxes)
         # print(aa[0])
         print(category_index[aa[0]]['name'])
+        print(100*bb[0])
+        box = cc[0].tolist()
+        # print(box)
+        
+        ymin, xmin, ymax, xmax = box
+        (left, right, top, bottom) = (xmin * im_width, xmax * im_width,
+                                  ymin * im_height, ymax * im_height)
+        print("left="+str(left))
+        print("right="+str(right))
+        print("top="+str(top))
+        print("bottom="+str(bottom))
       cv2.imshow('image',cv2.resize(image_np,(700,500)))
       if cv2.waitKey(25) & 0xFF == ord('q'):
           cv2.destroyAllWindows()
