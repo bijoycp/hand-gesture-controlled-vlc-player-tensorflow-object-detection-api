@@ -74,7 +74,7 @@ after running the program you will get a trained model in
 
 hand_sign_out_inference_graph directory   
 downlod the directory into your local pc 
-## runthe program in pc 
+## run the program in pc 
 your object-detection directory will look like this 
 object-detection/  
 -utils/  
