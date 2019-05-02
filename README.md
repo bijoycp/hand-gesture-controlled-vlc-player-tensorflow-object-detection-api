@@ -6,7 +6,7 @@ capture the images from webcam with a, l and i gesture images of 250 using the p
 ## label the image data using 
 https://github.com/tzutalin/labelImg
 
-take 70% images of al and i to train directory and 30 % to test directory
+take 70% images of a,l and i to train directory and 30 % to test directory
 
 ## upload to google drive
 upload the images and the data files to google drive name data-colab
