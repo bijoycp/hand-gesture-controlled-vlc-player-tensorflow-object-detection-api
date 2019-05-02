@@ -89,4 +89,4 @@ object-detection/
 -object_detection_webcam_1.py 
 
 run the object_detection_webcam_1.py python program
-![output](https://user-images.githubusercontent.com/18006433/57101774-8d26ac80-6d3f-11e9-82a8-c1435ba83f25.png)
+![output](https://user-images.githubusercontent.com/18006433/57104114-2a381400-6d45-11e9-982d-01925266f207.png)
