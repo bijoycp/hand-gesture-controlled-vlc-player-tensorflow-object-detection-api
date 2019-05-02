@@ -75,4 +75,18 @@ after running the program you will get a trained model in
 hand_sign_out_inference_graph directory   
 downlod the directory into your local pc 
 ## runthe program in pc
-run the object_detection_webcam_1.py  
+object-detection/
+-utils/
+-- ......
+-protos/
+--....
+-hand_sign_out_inference_graph/
+--frozen_inference_graph.pb
+--model.ckpt.data-00000-of-00001
+--model.ckpt.index
+--model.ckpt.meta
+--....
+-object_detection_webcam_1.py 
+
+run the object_detection_webcam_1.py python program
+![output](https://user-images.githubusercontent.com/18006433/57101774-8d26ac80-6d3f-11e9-82a8-c1435ba83f25.png)
