@@ -65,7 +65,7 @@ data-colab/
 -protobuf.zip  
 -generate_tfrecord.py  
 
-## run the program in colab
+## run the program in colab for training the model
 open the object-detection.ipynb program and run the program using colab  
 https://colab.research.google.com/  
 
