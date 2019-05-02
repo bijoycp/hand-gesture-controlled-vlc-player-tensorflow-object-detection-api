@@ -24,7 +24,7 @@ from utils import visualization_utils as vis_util
 # By default we use an "SSD with Mobilenet" model here. See the [detection model zoo](https://github.com/tensorflow/models/blob/master/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
 
 # What model to download.
-MODEL_NAME = 'hand_out-1383'
+MODEL_NAME = 'hand_sign_out_inference_graph'
 # MODEL_FILE = MODEL_NAME + '.tar.gz'
 # DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
 
