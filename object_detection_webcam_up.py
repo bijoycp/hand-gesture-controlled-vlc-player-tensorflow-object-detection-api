@@ -108,11 +108,11 @@ with detection_graph.as_default():
           line_thickness=8)
 #      plt.figure(figsize=IMAGE_SIZE)
 #      plt.imshow(image_np)
-      a=str(classes)
-      c=a.split('.')
-      print(c[0])	
-      aa=np.squeeze(classes).astype(np.int32)
-      print(aa)
+      bb=np.squeeze(scores)
+      if bb[0]>.75:
+        aa=np.squeeze(classes).astype(np.int32)
+        # print(aa[0])
+        print(category_index[aa[0]]['name'])
       cv2.imshow('image',cv2.resize(image_np,(700,500)))
       if cv2.waitKey(25) & 0xFF == ord('q'):
           cv2.destroyAllWindows()
