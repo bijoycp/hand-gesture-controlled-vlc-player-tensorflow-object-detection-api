@@ -69,7 +69,7 @@ data-colab/
 open the object-detection.ipynb program and run the program using colab  
 https://colab.research.google.com/  
 
-##download the trained model
+## download the trained model
 after running the program you will get a trained model in  
 
 hand_sign_out_inference_graph directory   
