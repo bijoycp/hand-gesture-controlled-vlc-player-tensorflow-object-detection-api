@@ -3,7 +3,7 @@ control a vlc player using hand gesture - tensorflow object detection api  model
 
 capture the images from webcam with a, l and i gesture images of 250 using the program
 
-## label the image data using 
+## label the images using 
 https://github.com/tzutalin/labelImg
 
 take 70% images of a,l and i to train directory and 30 % to test directory
